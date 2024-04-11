@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   fillBtns.forEach(btn => {
     btn.addEventListener("click", function() {
-      const factor = parseFloat(btn.getAttribute("data-factor"));
-      input1.value = factor.toLocaleString();
+      const value = parseFloat(btn.getAttribute("data-value"));
+      input1.value = value.toLocaleString();
     });
   });
 
