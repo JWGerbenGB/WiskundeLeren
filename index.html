@@ -11,11 +11,28 @@
 
 <body>
   <div class="container">
+    <div class="block" id="first-block">
+      <div class="row">
+        <label>Welkom bij de lesvoorbereiding voor H7.5 Standaardvorm. Hier zijn (5) korte vragen:
+          <br>(1) Probeer is een groot getal in je rekenmachine te zetten, vanaf wanneer gaat de notatie over a * 10<sup>b</sup>?
+          <br>(2) Speel is met [BLOK 1], kan je een relatie vinden tussen de macht van de 10 en het aantal nullen?
+          <br>(3) Speel met [BLOK 2] en kijk hoe de getallen uit de spreektaal vertalen naar 10<sup>?</sup> notatie.
+          <br>(4) Speel met [BLOK 3], wat valt op aan de machten van 10 van het 1<sup>e</sup> en 2<sup>e</sup> nummer en de macht van 10 van het antwoord?
+          <br>(5) Waarom denk je dat deze notatie, a * 10<sup>b</sup>?, bestaat? Wat zijn de voordelen ervan?
+        </label>
+      </div>
+    </div>
     <div class="block">
+      <div class="row">
+        <label class="color-text">[BLOK 1] Hoe ziet 10<sup>?</sup> er uit als getal</label>
+      </div>
+      <div class="row">
+        <label>(Negeer antwoorden waar veel 9's in staan, dit is een computer logica foutje)</label>
+      </div>
       <div class="row">
         <label for="base">10</label>
         <sup><input type="number" id="exponent" min="-999" max="999" value="0"></sup>
-        <label>=</label>
+        <label>&nbsp;=</label>
         <div id="result-normal">1</div>
         <label>=</label>
         <div id="result-scientific">1</div>
@@ -23,12 +40,15 @@
     </div>
     <div class="block">
       <div class="row">
-        <label>Second row label</label>
+        <label class="color-text">[BLOK 2] Grote en Kleine getallen van spreektaal naar getal</label>
       </div>
       <div class="row">
-        <button class="conversion-btn" data-factor="1000000000000">biljard</button>
-        <button class="conversion-btn" data-factor="1000000000">biljoen</button>
-        <button class="conversion-btn" data-factor="1000000">miljard</button>
+        <label id="speech">Klik de knopjes hieronder aan!</label>
+      </div>
+      <div class="row">
+        <button class="conversion-btn" data-factor="1000000000000000">biljard</button>
+        <button class="conversion-btn" data-factor="1000000000000">biljoen</button>
+        <button class="conversion-btn" data-factor="1000000000">miljard</button>
         <button class="conversion-btn" data-factor="1000000">miljoen</button>
         <button class="conversion-btn" data-factor="1000">duizend</button>
         <button class="conversion-btn" data-factor="0.001">één duizendste</button>
@@ -40,39 +60,73 @@
     </div>
     <div class="block">
       <div class="row">
+        <label class="color-text">[BLOK 3] Grote en Kleine getallen met elkaar vermenigvuldigen</label>
+      </div>
+      <div class="row">
         <label>Eerste nummer:</label>
-        <button class="fill-btn" data-value="1000000000000">biljard</button>
-        <button class="fill-btn" data-value="1000000000">biljoen</button>
-        <button class="fill-btn" data-value="1000000">miljard</button>
+        <button class="fill-btn" data-value="1000000000000000">biljard</button>
+        <button class="fill-btn" data-value="1000000000000">biljoen</button>
+        <button class="fill-btn" data-value="1000000000">miljard</button>
         <button class="fill-btn" data-value="1000000">miljoen</button>
         <button class="fill-btn" data-value="1000">duizend</button>
-        <button class="fill-btn" data-value="0.001">één duizendste</button>
-        <button class="fill-btn" data-value="0.000001">één miljoenste</button>
-        <button class="fill-btn" data-value="0.000000001">één miljardste</button>
-        <button class="fill-btn" data-value="0.000000000001">één biljoenste</button>
-        <button class="fill-btn" data-value="0.000000000000001">één biljardste</button>
+        <button class="fill-btn" data-value="0,001">één duizendste</button>
+        <button class="fill-btn" data-value="0,000001">één miljoenste</button>
+        <button class="fill-btn" data-value="0,000000001">één miljardste</button>
+        <button class="fill-btn" data-value="0,000000000001">één biljoenste</button>
+        <button class="fill-btn" data-value="0,000000000000001">één biljardste</button>
       </div>
       <div class="row">
         <label>Tweede nummer:</label>
-        <button class="fill-btn" data-value="1000000000000">biljard</button>
-        <button class="fill-btn" data-value="1000000000">biljoen</button>
-        <button class="fill-btn" data-value="1000000">miljard</button>
+        <button class="fill-btn" data-value="1000000000000000">biljard</button>
+        <button class="fill-btn" data-value="1000000000000">biljoen</button>
+        <button class="fill-btn" data-value="1000000000">miljard</button>
         <button class="fill-btn" data-value="1000000">miljoen</button>
         <button class="fill-btn" data-value="1000">duizend</button>
-        <button class="fill-btn" data-value="0.001">één duizendste</button>
-        <button class="fill-btn" data-value="0.000001">één miljoenste</button>
-        <button class="fill-btn" data-value="0.000000001">één miljardste</button>
-        <button class="fill-btn" data-value="0.000000000001">één biljoenste</button>
-        <button class="fill-btn" data-value="0.000000000000001">één biljardste</button>
+        <button class="fill-btn" data-value="0,001">één duizendste</button>
+        <button class="fill-btn" data-value="0,000001">één miljoenste</button>
+        <button class="fill-btn" data-value="0,000000001">één miljardste</button>
+        <button class="fill-btn" data-value="0,000000000001">één biljoenste</button>
+        <button class="fill-btn" data-value="0,000000000000001">één biljardste</button>
       </div>
       <div class="row">
-        <input type="text" id="input1">
-        <label>*</label>
-        <input type="text" id="input2">
+        <input type="text" id="input1" value="1">
+        <label> × </label>
+        <input type="text" id="input2" value="1">
         <label>=</label>
-        <div id="multiply-result-normal">0</div>
-        <label>=</label>
-        <div id="multiply-result-scientific">0</div>
+      </div>
+      <div class="row">
+        <label id="input1ss"> 1 </label>
+        <label> × </label>
+        <label id="input2ss"> 1 </label>
+        <label> = </label>
+        <div id="multiply-result-scientific">1</div>
+        <label>&nbsp;= </label>
+        <div id="multiply-result-normal">1</div>
+      </div>
+    </div>
+    <div class="block" id="last-block">
+      <div class="row">
+        <label class="color-text">[BLOK 4] Overzicht grote en kleine getallen</label>
+      </div>
+      <div class="row">
+        <label>
+          Triljard = 10<sup>21</sup> = 1.000.000.000.000.000.000.000<br>
+          Triljoen = 10<sup>18</sup> = 1.000.000.000.000.000.000<br>
+          Biljard = 10<sup>15</sup> = 1.000.000.000.000.000<br>
+          Biljoen = 10<sup>12</sup> = 1.000.000.000.000<br>
+          Miljard = 10<sup>9</sup> = 1.000.000.000<br>
+          Miljoen = 10<sup>6</sup> = 1.000.000<br>
+          Duizend = 10<sup>3</sup> = 1.000<br>
+          Een = 10<sup>0</sup> = 1<br>
+          Één duizendste = 10<sup>-3</sup> = 0.001<br>
+          Één miljoenste = 10<sup>-6</sup> = 0.000001<br>
+          Één miljardste = 10<sup>-9</sup> = 0.000000001<br>
+          Één biljoenste = 10<sup>-12</sup> = 0.000000000001<br>
+          Één biljardste = 10<sup>-15</sup> = 0.000000000000001<br>
+          Één triljoenste = 10<sup>-18</sup> = 0.000000000000000001<br>
+          Één triljardste = 10<sup>-21</sup> = 0.000000000000000000001<br>
+          Zie ook <a href="https://nl.wikipedia.org/wiki/SI-voorvoegsel">de Wikipedia pagina</a>.
+        </label>
       </div>
     </div>
   </div>

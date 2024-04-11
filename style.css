@@ -2,14 +2,16 @@ body {
   font-family: 'Roboto Condensed', 'Pragati Narrow', Arial, sans-serif;
   font-size: 1.3rem;
   color: #f1f1f1;
-  background: #1f2023;
+  background: #1f2023; /* Set background color for the entire page */
   text-align: center;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   margin-top: 50px;
 }
 
@@ -17,10 +19,19 @@ body {
   border: 2px solid #335796;
   padding: 10px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.block:first-child {
+  display: flex;
 }
 
 .row {
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 label {
@@ -28,14 +39,16 @@ label {
 }
 
 input[type="number"] {
+  flex: 0 0 auto;
   width: 50px;
 }
 
 input[type="text"] {
-  width: 100px;
+  flex: 1 1 auto;
 }
 
 button {
+  flex: 0 0 auto;
   margin-right: 5px;
   background: rgba(0, 0, 0, 0.25);
   outline: none;
@@ -51,14 +64,27 @@ button:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
+.color-text {
+  color: #335796;
+}
+
 #result-normal,
 #multiply-result-normal {
-  display: inline-block;
+  flex: 0 0 auto;
   margin-right: 5px;
 }
 
 #result-scientific,
 #multiply-result-scientific {
-  display: inline-block;
-  font-style: italic;
+  flex: 0 0 auto;
+}
+
+#first-block .row label,
+#last-block .row label {
+  text-align: left;
+}
+
+/* Adjust width of the third block */
+.block:last-child {
+  width: fit-content;
 }
