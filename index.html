@@ -4,21 +4,72 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your title</title>
+  <title>Scientific Calculator</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:Regular 400,Bold 700|Pragati+Narrow:400,700">
-  <!-- <link rel="icon" type="favicon" href="https://yourlinktoanicon.ico"> -->
   <link rel="stylesheet" href="style.css">
-  <script defer src="main.js"></script>
 </head>
 
-
-
-
 <body>
-    <div id="a-container" class="center">
-        <label for="input">This is a label:</label>
-        <input type="text" id="an-input">
-        <button type="button" id="a-button">Click me!</button>
-        <div id="some-text"></div>
+  <div class="container">
+    <div class="row">
+      <label for="base">10</label>
+      <sup><input type="number" id="exponent" min="-999" max="999" value="0"></sup>
+      <label>=</label>
+      <div id="result-normal">1</div>
+      <label>=</label>
+      <div id="result-scientific">1</div>
     </div>
+    <div class="row">
+      <label>Second row label</label>
+    </div>
+    <div class="row">
+      <button class="conversion-btn" data-factor="1000000000000">biljard</button>
+      <button class="conversion-btn" data-factor="1000000000">biljoen</button>
+      <button class="conversion-btn" data-factor="1000000">miljard</button>
+      <button class="conversion-btn" data-factor="1000000">miljoen</button>
+      <button class="conversion-btn" data-factor="1000">duizend</button>
+      <button class="conversion-btn" data-factor="0.001">één duizendste</button>
+      <button class="conversion-btn" data-factor="0.000001">één miljoenste</button>
+      <button class="conversion-btn" data-factor="0.000000001">één miljardste</button>
+      <button class="conversion-btn" data-factor="0.000000000001">één biljoenste</button>
+      <button class="conversion-btn" data-factor="0.000000000000001">één biljardste</button>
+    </div>
+    <div class="row">
+      <input type="text" id="input1">
+      <label>*</label>
+      <input type="text" id="input2">
+      <label>=</label>
+      <div id="multiply-result-normal">0</div>
+      <label>=</label>
+      <div id="multiply-result-scientific">0</div>
+    </div>
+    <div class="row">
+      <label>Eerste nummer:</label>
+      <button class="fill-btn">biljard</button>
+      <button class="fill-btn">biljoen</button>
+      <button class="fill-btn">miljard</button>
+      <button class="fill-btn">miljoen</button>
+      <button class="fill-btn">duizend</button>
+      <button class="fill-btn">één duizendste</button>
+      <button class="fill-btn">één miljoenste</button>
+      <button class="fill-btn">één miljardste</button>
+      <button class="fill-btn">één biljoenste</button>
+      <button class="fill-btn">één biljardste</button>
+    </div>
+    <div class="row">
+      <label>Tweede nummer:</label>
+      <button class="fill-btn">biljard</button>
+      <button class="fill-btn">biljoen</button>
+      <button class="fill-btn">miljard</button>
+      <button class="fill-btn">miljoen</button>
+      <button class="fill-btn">duizend</button>
+      <button class="fill-btn">één duizendste</button>
+      <button class="fill-btn">één miljoenste</button>
+      <button class="fill-btn">één miljardste</button>
+      <button class="fill-btn">één biljoenste</button>
+      <button class="fill-btn">één biljardste</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
+</html>
