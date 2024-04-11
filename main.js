@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function formatNumber(number) {
-    const formattedNumber = number.toLocaleString(undefined, formatOptions);
+    const formattedNumber = number.toLocaleString('nl-NL', formatOptions);
     if (Math.abs(number) < 1 && Math.abs(number) > 0) {
       const decimalPart = formattedNumber.split(',')[1] || '0'; // Extract decimal part or default to '0'
       return `0,${decimalPart}`;
